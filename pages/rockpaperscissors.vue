@@ -18,15 +18,15 @@ export default {
       possibleChoices:[ 
         {
           name: 'Rock',
-          url: 'https://www.clipartmax.com/png/middle/244-2448974_file-hands-zip-fist-hand-white-png.png'
+          url: 'https://www.pinclipart.com/picdir/big/536-5360218_rock-paper-scissors-clipart-png-download-paper-rock.png'
         }, 
         {
           name: 'Paper',
-          url: 'https://www.pinclipart.com/picdir/middle/201-2018373_vector-hand-png-clipart.png'
+          url: 'https://www.pinclipart.com/picdir/big/536-5360310_transparent-rock-paper-scissors-clipart-rock-paper-scissors.png'
         },
         {
           name: 'Scissors',
-          url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuoasNTbqEj8OFOPTt6DGetncBCBMlO79G0Q&usqp=CAU'
+          url: 'https://www.pinclipart.com/picdir/big/536-5360227_scissors-hand-rock-paper-scissors-png-clipart.png'
         }
       ]   
     }
