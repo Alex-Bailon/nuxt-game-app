@@ -59,7 +59,12 @@ export default {
           icon: 'mdi-chart-bubble',
           title: 'Rock Paper Scissors',
           to: '/rockpaperscissors'
-        }
+        },
+        {
+          icon: 'mdi-target',
+          title: 'Reaction Time',
+          to: '/reactiontime'
+        },
       ],
       miniVariant: false,
       right: true,

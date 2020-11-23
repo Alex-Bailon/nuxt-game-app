@@ -33,10 +33,10 @@ export default {
 <template>
   <v-container fluid>
     <v-row justify="center">
-      <h2>Click on the box when it turns green to check your reaction time!</h2>
+      <h2>Click the target when it turns green to check your reaction time!</h2>
     </v-row>
-    <v-row class="py-2" justify="center">
-      <div @click="stopTimer" :class="startTimer ? 'green' : 'red' " id="box"></div>
+    <v-row class="py-5" justify="center">
+      <v-icon @click="stopTimer" :color="startTimer ? 'green' : 'red'" size="300">mdi-target</v-icon>
     </v-row>
     <v-row v-if="time" justify="center">
       <h2> Your reaction time was {{ time }} milliseconds </h2>
@@ -51,6 +51,7 @@ export default {
   #box {
     height: 300px;
     width: 300px;
+    border-radius: 150px;
   }
   .red {
     background-color: red;
