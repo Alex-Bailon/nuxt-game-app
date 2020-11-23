@@ -48,13 +48,10 @@ export default {
   <v-container fluid>
     <div v-if="userChoice == null">
       <h1>Please Select Your Choice</h1>
-      <v-row>
-        <v-col v-for="choice in possibleChoices" :key="choice.name" cols="12" sm="4">
-          <v-card @click="choiceMade(choice)" >
-            <v-img height="250" :src="choice.url"/>
-            <v-card-title >
-              {{ choice.name }}
-            </v-card-title>
+      <v-row justify="center">
+        <v-col v-for="choice in possibleChoices" :key="choice.name" cols="12" sm="6">
+          <v-card flat @click="choiceMade(choice)" >
+            <v-img contain height="300" :src="choice.url"/>
           </v-card>
         </v-col>
       </v-row>
