@@ -65,8 +65,7 @@
           <v-spacer />
           <v-btn
             color="primary"
-            nuxt
-            to="/inspire"
+            @click="clicked"
           >
             Continue
           </v-btn>
@@ -79,11 +78,19 @@
 <script>
 import Logo from '~/components/Logo.vue'
 import VuetifyLogo from '~/components/VuetifyLogo.vue'
+import axios from 'axios'
 
 export default {
   components: {
     Logo,
     VuetifyLogo
+  },
+  methods: {
+    async clicked(){
+      console.log('hello')
+      const res = await axios.get('/')
+      console.log(res)
+    }
   }
 }
 </script>
